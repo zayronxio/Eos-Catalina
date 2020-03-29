@@ -1,0 +1,916 @@
+
+window.background {
+background: rgba (254, 253, 253, 0.9);
+border-radius: 0px 0px 8px 8px;
+border: solid 1;
+}
+
+.popup.background {
+  border-radius: 6px 6px 6px 6px;
+  background: #fff;
+}
+
+.background.csd.mainwindow {
+background: #ebebeb;
+color: #202020;
+border-color: #ebebeb;
+border-radius: 0 0 6px 6px;
+}
+
+
+.background.csd.rounded {
+background: #ebebeb;
+color: #202020;
+border-color: #ebebeb;
+border-radius: 0 0 6px 6px;
+}
+
+window.background.csd.rounded stack box.vertical {
+background: transparent;
+border-radius: 0px 0px 8px 0px;
+border-left: none;
+border-left-color: #aaa;
+color: #000;
+}
+
+window {
+background: transparent;
+}
+
+window decoration{
+border-radius: 8px 8px 8px 8px;
+box-shadow: 3px 4px 22px -6px rgba(0,0,0,0.23);
+border: solid 1;
+border-color: #aaa;
+}
+
+
+
+iconview {
+background: #fff;
+border-radius: 0px 0px 8px 0px;
+}
+
+stack box.vertical {
+background: #eaeaea;
+border-radius: 0px 0px 8px 0px;
+border-left: solid 1;
+border-left-color: #aaa;
+color: #000;
+}
+
+
+widget.view.welcome {
+background: #eaeaea;
+color: #353535;
+}
+
+
+
+/************barra ***
+********************/
+
+
+headerbar {
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 3%, rgba(224,224,224,1) 1%, rgba(201,201,201,1) 97%, rgba(205,205,205,1) 100%);
+border-radius: 8px 8px 0px 0px;
+padding: 6px 15px;
+color: #7e7e7e;
+border-bottom: solid 1;
+border-color: #9d9d9d;
+}
+
+
+
+
+
+
+/*******botones cerrar/minimizar/maximizar de la barra****/
+
+
+window headerbar box.horizontal.left {
+background: transparent;
+}
+
+window headerbar button.close image {
+background: #fe695a;
+color: #fe695a;
+padding: 0px 0px;
+border-radius:25px;
+border-color: #d65a54;
+}
+
+window headerbar button.maximize image {
+background: #21d33f;
+color: #21d33f;
+padding: 0px 0px;
+border-radius:25px;
+border-color: #d65a54;
+
+}
+
+window headerbar button.maximize image {
+background: #21d33f;
+color: #21d33f;
+padding: 0px 0px;
+border-radius:25px;
+border-color: #d65a54;
+}
+
+window headerbar button.minimize image {
+background: #fbc030;
+color: #fbc030;
+padding: 0px 0px;
+border-radius:25px;
+border-color: #d65a54;
+}
+
+
+/******************botones atras y adelanter*****/
+
+
+window headerbar button.flat.image-button:last-child {
+background: #fbfbfb;
+margin: 4px 0px 4px -7px;
+border: 1px #c1c0c4;
+min-width: 28px;
+border-radius:5px;
+border: 1px solid #b5b5b5;
+color: #838383;
+border-radius: 5px 0px 0px 5px
+}
+
+window headerbar button.flat.image-button {
+background: #fbfbfb;
+margin: 4px 0px 4px -7px;
+border: 1px #c1c0c4;
+min-width: 28px;
+border-radius:5px;
+border: 1px solid #b5b5b5;
+color: #838383;
+border-radius: 0px 5px 5px 0px
+}
+
+
+/*****************botones para intercalar vista en marlin files ****/
+
+
+window box button.toggle {
+background: transparent;
+padding: 6px 6px;
+outline-style: solid;
+-gtk-outline-radius: 5px;
+
+}
+
+window box button.toggle:first-child {
+background: transparent;
+padding: 6px 6px;
+outline-style: solid;
+-gtk-outline-radius: 5px;
+border-color: #000;
+border-width: .3px;
+border-right-style: solid;
+border-radius: 5px 0px 0px 5px;
+}
+
+window box button.toggle:last-child {
+background: transparent;
+padding: 6px 6px;
+outline-style: solid;
+-gtk-outline-radius: 5px;
+border-color: #000;
+border-width: .3px;
+border-left-style: solid;
+border-radius: 0px 5px 5px 0px;
+}
+
+window box button.toggle:first-child:checked {
+background: #61616a;
+padding: 6px 6px;
+outline-style: solid;
+-gtk-outline-radius: 5px;
+border-color: #000;
+border-width: .3px;
+border-left-style: solid;
+border-radius: 5px 0px 0px 05px;
+color: #f1f1f1;
+}
+
+window box button.toggle:last-child:checked {
+background: #61616a;
+padding: 6px 6px;
+outline-style: solid;
+-gtk-outline-radius: 5px;
+border-color: #000;
+border-width: .3px;
+border-left-style: solid;
+border-radius: 0px 5px 5px 0px;
+color: #f1f1f1;
+}
+
+window box button.toggle:checked {
+background: #61616a;
+padding: 6px 6px;
+outline-style: solid;
+-gtk-outline-radius: 5px;
+border-color: #000;
+border-width: .3px;
+border-left-style: solid;
+color: #f1f1f1;
+}
+
+window headerbar box.linked.horizontal.raised {
+background-color: #fbfbfb;
+border-radius:5px;
+padding: 0px 0px;
+color: #838383;
+border: 1px solid #b5b5b5;
+}
+
+
+/***** barra de direcciones de files****/
+
+
+.pathbar {
+background: #fbfbfb;
+color: #000;
+border-color: #a9a9a9;
+border-radius: 5px;
+min-height: 24px;
+box-shadow: 0px 0px .5px;
+padding: 0px 5px;
+margin: -1px 5px; 
+border-width: 1px;
+border-style: solid;
+}
+
+.pathbar image {
+color: #929292;
+}
+
+
+/*****treview ***/
+
+
+viewport.frame box.vertical {
+background: transparent;
+color: #000000;
+border-radius: 0px 0px 0px 12px;
+margin-right: -5px;
+}
+
+viewport.frame {
+border: solid 0;
+margin-right: 4px;
+}
+
+treeview.view  {
+color: #595959;
+}
+
+treeview.view label{
+color: #595959;
+font-weight: 700;
+}
+viewport row label, paned list label, viewport grid label{
+color: #595959;
+}
+
+
+
+/**** window notebook tabs ventanas del navegador***/
+
+window paned notebook  tabs grid.horizontal revealer button {
+background: transparent;
+color: #000;
+border-color: transparent;
+}
+
+window paned notebook header  {
+background: #ececed;
+border-bottom: solid 1;
+border-color: #9d9d9d;
+
+}
+
+window paned notebook  tab widget grid  {
+background: #dbdadc;
+color: #000;
+border-radius: 0px 0px 0px 0px
+}
+
+
+window paned notebook  tab widget grid label{
+background: #dbdadc;
+color: #202020;
+border-radius: 0px 0px 0px 0px
+}
+
+window paned notebook  tab:hover widget grid  {
+background: #dbdadc;
+color: #000;
+border-radius: 0px 0px 0px 0px
+}
+
+
+window paned notebook  tab:hover widget grid label{
+background: #dbdadc;
+color: #202020;
+border-radius: 0px 0px 0px 0px
+}
+
+window paned notebook  tab:hover widget grid image {
+background: transparent;
+color: #000;
+
+}
+
+
+
+window paned notebook  tabs{
+background: #d7d7d7;
+color: #000;
+}
+
+/* botones del tab*****/
+ 
+window paned notebook header {
+background: #d7d7d7;
+
+
+}
+
+window paned notebook  button {
+background: transparent;
+color: #000;
+border-color: transparent;
+}
+
+/****** menu de elementary os*****/
+
+popover,
+popover.background {
+  padding: 0;
+  border-radius: 6px;
+  background-clip: border-box;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.03);
+color: #000;
+}
+popover box grid widget grid stack{
+border: 1px solid transparent;
+}
+
+
+app-launcher/entry {
+
+background:#000;
+}
+
+
+
+
+
+entry {
+background: #fbfbfb;
+color: #838383;
+border-color: #d65a54;
+border-radius: 5px;
+min-height: 24px;
+box-shadow: 0px .5px 1px;
+}
+
+entry image {
+color: #929292;
+}
+}
+/******* centro de configuraciones****/
+
+viewport.frame grid label.h4  {
+
+font-size: 12px;
+font-weight: 700;
+}
+
+viewport.frame label.h4  {
+
+font-size: 14px;
+font-weight: 700;
+}
+
+viewport.frame grid.vertical frame  {
+
+border-bottom: solid 1;
+border-top: solid 1;
+border-left: solid 1;
+border-color: #aaa;
+}
+
+
+viewport.frame list {
+
+border-right: solid 1;
+border-color: #aaa;
+}
+
+
+
+
+
+/****** menus*****/
+
+menuitem.button.flat,
+modelbutton.flat, button:link, button:visited, button:link:hover, button:link:active, button:link:checked, button:visited:hover, button:visited:active, button:visited:checked, notebook > header tabs > tab button.flat:hover, notebook > header tabs > tab button.budgie-menu-launcher:hover, notebook > header tabs > tab .budgie-panel button.flat.launcher:hover, .budgie-panel notebook > header tabs > tab button.flat.launcher:hover, notebook > header tabs > tab button.flat:active, notebook > header tabs > tab button.budgie-menu-launcher:active, notebook > header tabs > tab .budgie-panel button.flat.launcher:active, .budgie-panel notebook > header tabs > tab button.flat.launcher:active, notebook > header tabs > tab button.flat:active:hover, notebook > header tabs > tab button.budgie-menu-launcher:active:hover, .app-notification button,
+calendar.button, .nemo-window .floating-bar button, calendar.raven-calendar.button {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+
+menuitem.button.flat,
+modelbutton.flat {
+  transition: all 0.1s cubic-bezier(0, 0, 0.2, 1);
+  min-height: 26px;
+  padding-left: 8px;
+  padding-right: 8px;
+  outline-offset: -3px;
+  border-radius: 5px;
+}
+
+menuitem.button.flat:hover,
+modelbutton.flat:hover {
+  background-color: #444444;
+  transition-duration: 50ms;
+}
+
+menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+modelbutton.flat:active,
+modelbutton.flat:active arrow,
+modelbutton.flat:selected,
+modelbutton.flat:selected arrow {
+  transition: none;
+  animation: none;
+}
+
+menuitem.button.flat:checked,
+modelbutton.flat:checked {
+  color: #dedede;
+}
+
+menuitem.button.flat:disabled,
+modelbutton.flat:disabled {
+  color: rgba(222, 222, 222, 0.45);
+}
+
+menuitem.button.flat check:last-child,
+menuitem.button.flat radio:last-child,
+modelbutton.flat check:last-child,
+modelbutton.flat radio:last-child {
+  margin-left: 8px;
+}
+
+menuitem.button.flat check:first-child,
+menuitem.button.flat radio:first-child,
+modelbutton.flat check:first-child,
+modelbutton.flat radio:first-child {
+  margin-right: 8px;
+}
+
+.popup.background {
+  background-color: transparent;
+}
+
+.context-menu,
+menu,
+.menu {
+  padding: 6px 0;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+}
+
+.csd .context-menu, .csd
+menu, .csd
+.menu {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 6px
+  color: #000;
+}
+
+.context-menu separator,
+.csd .context-menu separator,
+menu separator,
+.csd
+menu separator,
+.menu separator,
+.csd
+.menu separator {
+  margin: 2px 0;
+  min-height: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+}
+
+.context-menu > menuitem,
+menu > menuitem,
+.menu > menuitem {
+  background: transparent;
+  min-height: 12px;
+  min-width: 40px;
+  padding: 3px 15px;
+  text-shadow: none;
+color: #000;
+}
+
+.context-menu > menuitem:hover,
+menu > menuitem:hover,
+.menu > menuitem:hover {
+  transition: none;
+  color: #fff;
+ background-color: #0266e2;
+}
+
+.context-menu > menuitem:hover arrow,
+menu > menuitem:hover arrow,
+.menu > menuitem:hover arrow {
+  transition: none;
+  color: #ffffff;
+}
+
+.context-menu > menuitem:hover menu arrow,
+menu > menuitem:hover menu arrow,
+.menu > menuitem:hover menu arrow {
+  color: #242424;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+
+.context-menu > menuitem:hover menu menuitem:hover arrow,
+menu > menuitem:hover menu menuitem:hover arrow,
+.menu > menuitem:hover menu menuitem:hover arrow {
+  color: #ffffff;
+}
+
+.context-menu > menuitem:disabled,
+menu > menuitem:disabled,
+.menu > menuitem:disabled {
+  color: rgba(36, 36, 36, 0.55);
+}
+
+.context-menu > menuitem arrow,
+menu > menuitem arrow,
+.menu > menuitem arrow {
+  min-height: 16px;
+  min-width: 16px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  color: #242424;
+}
+
+.context-menu > menuitem arrow:dir(ltr),
+menu > menuitem arrow:dir(ltr),
+.menu > menuitem arrow:dir(ltr) {
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+  margin-right: 0;
+}
+
+.context-menu > menuitem arrow:dir(rtl),
+menu > menuitem arrow:dir(rtl),
+.menu > menuitem arrow:dir(rtl) {
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
+  margin-left: 0;
+}
+/*****botones****/
+
+combobox box button.combo { 
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+border-radius: 5px;
+margin: 3px;
+color: #202020;
+border-color: #000;
+border: 0.3px;
+border-style: solid;
+box-shadow: 0px 0.1px;
+}
+
+
+buttonbox button.text-button {
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+border-radius:6px;
+box-shadow: 0.2px 0.2px 1.px rgba(0,0,0,01);
+color: #202020;
+}
+
+
+button.text-button.suggested-action, button.text-button.destructive-action{
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+border-radius:6px;
+box-shadow: 0.2px 0.2px 1.px rgba(0,0,0,01);
+color: #202020;
+padding: 4px 15px
+
+}
+
+paned button, button.text-button.back-button {
+border-radius: 4px;
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+border: solid 1;
+border-color: #a7a7a7;
+padding: 3.5;
+color: 
+#414141;
+}
+
+
+stackswitcher {
+background: transparent;
+color: #000;
+margin: 5px;
+padding: 3px 5px 2px 0px;
+min-height: 21px;
+}
+stackswitcher button:last-child {
+border-radius: 0px 5px 5px 0px;
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+border-color: #a7a7a7;
+margin: 4px 0px 4px -7px;
+color: #000;
+border: solid 1;
+border-color: #a7a7a7;
+
+}
+
+stackswitcher button:first-child {
+border-radius: 5px 0px 0px 5px;
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+border-color: #a7a7a7;
+color: #000;
+border: solid 1;
+border-color: #a7a7a7;
+padding: 0px 5px;
+margin: 4px 6px 4px 7px;
+}
+
+stackswitcher button {
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+color: #000;
+padding: 5px 10px;
+margin: 4px 0px 4px -7px;
+border: solid 1;
+border-color: #a7a7a7;
+font-weight: 600;
+}
+
+
+stackswitcher button:last-child:checked {
+border-radius: 0px 5px 5px 0px;
+background: linear-gradient(to bottom, rgba(104,165,249,1) 5%, rgba(0,115,253,1) 100%);
+margin: 4px 0px 4px -7px;
+color: #fff;
+font-weight: 600;
+border: solid 1;
+border-color: #0069FD;
+}
+stackswitcher button:first-child:checked {
+border-radius: 5px 0px 0px 5px;
+background: linear-gradient(to bottom, rgba(104,165,249,1) 5%, rgba(0,115,253,1) 100%);
+border-color: #a7a7a7;
+padding: ;
+margin: 4px 0px 4px -7px;
+color: #fff;
+border-right: solid 1;
+border-color: #0069FD;
+}
+
+stackswitcher button:checked{
+background: linear-gradient(to bottom, rgba(104,165,249,1) 5%, rgba(0,115,253,1) 100%);
+color: #fff;
+padding: 5px 10px;
+margin: 4px 0px 4px -7px;
+border: solid 1;
+border-color: #0069FD;
+}
+
+switch {
+  transition: all 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1);
+  margin: 6px 0;
+  border-radius: 50px;
+  background-color: #c6c6c6;
+  background-clip: padding-box;
+  color: rgba(36, 36, 36, 0.3);
+  font-size: 0;
+}
+
+switch:checked {
+  animation: switch_ripple_effect 0.3s cubic-bezier(0, 0, 0.2, 1);
+  background-color:  #3c89f7;
+  color: rgba(255, 255, 255, 0.65);
+
+}
+
+switch:disabled {
+  color: rgba(36, 36, 36, 0.15);
+  background-color: rgba(36, 36, 36, 0.15);
+}
+
+switch slider {
+  transition: all 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), margin 0;
+  min-width: 18px;
+  min-height: 18px;
+  margin: 2px 0 2px 2px;
+  border-radius: 50px;
+  -gtk-outline-radius: 50px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+assistant .sidebar {
+  background-color: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+assistant.csd .sidebar {
+  border-top-style: none;
+}
+
+assistant .sidebar label {
+  padding: 6px 12px;
+}
+
+assistant .sidebar label.highlight {
+  background-color: #0266e2;
+  color: #ffffff;
+}
+
+dialog {
+background: #ebebeb;
+border-radius: 0px 0px 8px 8px;
+color: #202020;
+}
+
+dialog headerbar, headerbar.flat {
+background: #ebebeb;
+border-radius: 8px 8px 0px 0px;
+color: #202020;
+border-color: transparent;
+}
+
+dialog button image {
+background: red;
+color: transparent;
+border-radius: 8;
+}
+dialog button label {
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+border-radius:6px;
+box-shadow: 0.2px 0.2px 1.px rgba(0,0,0,01);
+color: #202020;
+}
+
+dialog spinbutton {
+border-radius: 4px;
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+border: solid 1;
+border-color: #aaa;
+}
+
+dialog spinbutton entry {
+background: transparent;
+border-color: transparent;
+}
+
+
+dialog decoration {
+border-radius: 8px 8px 8px 8px;
+box-shadow: 3px 4px 22px -6px rgba(0,0,0,0.23);
+border: solid 1;
+border-color: #aaa;
+}
+
+grid label {
+color: #202020;
+}
+
+spinbutton {
+background: #fff;
+border-radius: 5px;
+color: #202020;
+border: solid 1;
+border-color: #a2a2a2;
+}
+
+spinbutton entry {
+background: transparent;
+border-radius: 5px 0px 0px 5px;
+margin: px 1px;
+padding: 0px 5px 0px 20px;
+border-right: solid 0.5
+}
+
+flowbox.horizontal.search-bar  {
+background: #ebebeb;
+border-left: solid 1;
+border-color: #aaa;
+padding: 10px 0px 0px 0px;
+}
+
+
+
+box.vertical revealer flowbox.horizontal.search-bar flowboxchild grid.horizontal.linked entry{
+background: #fbfbfb;
+color: #838383;
+border-color: #d65a54;
+border-radius: 5px;
+min-height: 20px;
+box-shadow: 0px .5px 1px;
+border-radius: 5px 0px 0px 5px;
+margin: 0px 0px 20px 8px;
+}
+
+flowbox.horizontal flowboxchild grid button:last-child{
+background: #fbfbfb;
+min-height: 20px;
+box-shadow: 0px .5px 1px;
+border-radius: 0px 5px 5px 0px;
+margin: 0px 0px 20px;
+}
+
+flowbox.horizontal flowboxchild grid button{
+background: ;background: #fbfbfb;min-height: 31px;
+box-shadow: 0px .5px 1px;
+border-radius:0px;
+border: none;
+border-left: solid 0.3;
+margin: 0px 0px 20px;
+}
+
+flowbox.horizontal flowboxchild grid{
+margin: 0px 0px -10px;
+
+}
+
+window headerbar button.image-button  {
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+padding: 2px 5px;
+border-radius: 5px;
+border-color: #949494;
+border: solid 0.5;
+}
+
+
+window headerbar grid.horizontal.linked.format-bar button.toggle:last-child {
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+padding: 2px 7px;
+border-radius: 0px 5px 5px 0px;
+border-color: #949494;
+border: solid 0.5;
+} 
+
+window headerbar grid.horizontal.linked.format-bar button.toggle:first-child  {
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+padding: 2px 7px;
+border-radius: 5px 0px 0px 5px;
+border-color: #949494;
+border: solid 0.5;
+} 
+
+window headerbar grid.horizontal.linked.format-bar button.toggle {
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
+padding: 2px 7px;
+margin: 0px -1px;
+border-color: #949494;
+border: solid 0.5;
+} 
+
+
+window headerbar grid.horizontal.linked.format-bar button.toggle:last-child:checked {
+background: linear-gradient(to bottom, rgba(104,165,249,1) 5%, rgba(0,115,253,1) 100%);
+padding: 2px 7px;
+border-radius: 0px 5px 5px 0px;
+border-color: #949494;
+border: solid 0.5;
+color: #fff;
+} 
+
+window headerbar grid.horizontal.linked.format-bar button.toggle:first-child:checked  {
+background: linear-gradient(to bottom, rgba(104,165,249,1) 5%, rgba(0,115,253,1) 100%);
+padding: 2px 7px;
+border-radius: 5px 0px 0px 5px;
+border-color: #949494;
+border: solid 0.5;
+color: #fff;
+} 
+
+window headerbar grid.horizontal.linked.format-bar button.toggle:checked  {
+background: linear-gradient(to bottom, rgba(104,165,249,1) 5%, rgba(0,115,253,1) 100%);
+padding: 2px 7px;
+margin: 0px -1px;
+border-color: #949494;
+border: solid 0.5;
+color: #fff;
+}
