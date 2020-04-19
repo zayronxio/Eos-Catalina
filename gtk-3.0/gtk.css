@@ -1054,12 +1054,25 @@ assistant .sidebar label.highlight {
   background-color: #0266e2;
   color: #ffffff;
 }
+/***** ventanas de dialogo****/
 
-dialog {
-background: #ebebeb;
-border-radius: 0px 0px 8px 8px;
+dialog  
+{
+background: @bg_color;
 color: #202020;
+border-radius: 0px 0px 7px 7px;
 }
+dialog .dialog-vbox .dialog-action-box {background: transparent;
+border: none;}
+dialog .dialog-vbox 
+{
+margin: -7}
+
+dialog box.dialog-vbox box box box box combobox box  {
+margin: 1px}
+dialog box.dialog-vbox box box box box entry  {
+margin: 6px}
+
 
 #dialog headerbar, headerbar.flat {
 background: #ebebeb;
@@ -1781,11 +1794,7 @@ paned.vertical treeview.view.source-list:selected  {border-radius: 0px 0px 0px 0
 paned.vertical scrolledwindow { background: white; border-radius: 0px 0px 7px 7px; border: none;}
 
 
-/***** ventanas de dialogo****/
 
-dialog  {background: @bg_color;}
-dialog .dialog-action-box {background: transparent;
-border: none;}
 
 /***se añade para redondear una esquina de files/marlin***/
 paned widget notebook stack widget  {background: transparent;}
