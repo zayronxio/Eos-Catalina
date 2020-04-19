@@ -291,46 +291,49 @@ border-radius: 0px 5px 5px 0px
 /*****************botones para intercalar vista en marlin files ****/
 
 window box button.toggle {
-background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
+background: transparent;
 outline-style: solid;
 -gtk-outline-radius: 5px;
 padding: 5px;
-border-color: #000;
-border: solid 0.2px;
-box-shadow: 0px 0.1px;
 }
 
 window box button.toggle:first-child {
-background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
-outline-style: solid;
--gtk-outline-radius: 5px;
-border-radius: 5px 0px 0px 5px;
-border-right: none;
-padding: 4px;
-}
-
-window box button.toggle:last-child {
-background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
+background: transparent;
 outline-style: solid;
 -gtk-outline-radius: 5px;
 border-color: #000;
+border-right: solid 0.3 #000;
+border-radius: 5px 0px 0px 5px;
+border-top: none;
+border-bottom: none;
 border-left: none;
+}
+
+window box button.toggle:last-child {
+background: transparent;
+outline-style: solid;
+-gtk-outline-radius: 5px;
+border-color: #000;
+border-width: .3px;
+border-left-style: solid;
 border-radius: 0px 5px 5px 0px;
-padding: 5px;
 }
 
 window box button.toggle:first-child:checked {
 background: #61616a;
+outline-style: solid;
+-gtk-outline-radius: 5px;
 border-color: #000;
-border-width: .2px;
+border-width: .3px;
 border-left-style: solid;
 border-radius: 5px 0px 0px 05px;
 color: #f1f1f1;
-padding: 5px;
 }
 
 window box button.toggle:last-child:checked {
 background: #61616a;
+outline-style: solid;
+-gtk-outline-radius: 5px;
 border-color: #000;
 border-width: .3px;
 border-left-style: solid;
@@ -340,13 +343,14 @@ color: #f1f1f1;
 
 window box button.toggle:checked {
 background: #61616a;
+outline-style: solid;
+-gtk-outline-radius: 5px;
 border-color: #000;
-border-width: .2px;
+border-width: .3px;
 border-left-style: solid;
 color: #f1f1f1;
-padding: 5px;
-box-shadow: 0px 0.1px;
 }
+
 
 #window  box.linked.horizontal.raised {
 background-color: #fbfbfb;
@@ -1000,7 +1004,58 @@ buttonbox .text-button {
 border-radius: 5px;}
 
 
+box.horizontal.linked.raised button:first-child {background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
+border: solid 0.2;
+border-right: none;
+border-radius: 5px 0px 0px 5px;
+box-shadow: 0px 0.1px;
+}
 
+box.horizontal.linked.raised button  {background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
+border: solid 0.2;
+border-right: none;
+border-left: none;
+box-shadow: 0px 0.1px;
+}
+
+box.horizontal.linked.raised button:last-child {
+background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
+border: solid 0.2 #000;
+border-radius: 0px 5px 5px 0px;
+box-shadow: 0px 0.1px;
+}
+
+
+box.horizontal.linked.raised button:first-child:checked {
+background: linear-gradient(to bottom, rgba(104, 104, 104, 1) 5%, rgba(100, 100, 100, 1) 100%);
+border: solid 0.2 #000;
+border-right: none;
+border-radius: 5px 0px 0px 5px;
+box-shadow: 0px 0.1px;
+}
+
+box.horizontal.linked.raised button:checked  {
+background: linear-gradient(to bottom, rgba(104, 104, 104, 1) 5%, rgba(100, 100, 100, 1) 100%);
+border: solid 0.2;
+border-right: none;
+border-left: none;
+box-shadow: 0px 0.1px;
+}
+
+box.horizontal.linked.raised button:last-child:checked {
+background: linear-gradient(to bottom, rgba(104, 104, 104, 1) 5%, rgba(100, 100, 100, 1) 100%);
+border: solid 0.2 #000;
+border-radius: 0px 5px 5px 0px;
+box-shadow: 0px 0.1px;
+}
+
+box.horizontal.linked.raised button:checked  label {color: #fff;
+font-weight: 500;}
+
+box.horizontal.linked.raised  .toggle {border: none; }
+box.horizontal.linked.raised  .toggle:last-child {border: none; border-left: solid 0.3; }
+box.horizontal.linked.raised  .toggle:first-child {border-right: solid 0.3; }
+/******/
 
 
 switch {

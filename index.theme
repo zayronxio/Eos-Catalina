@@ -1,11 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Eos-Catalina
-Comment=Light and dark colorful Gtk3.20+ theme
+Name=Elementary-Catalina
+Comment=apple operating system style theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Eos-Catalina
-MetacityTheme=Eos-Catalina
+GtkTheme=Elementary-Catalina
 IconTheme=Os-Catalina
 ButtonLayout=:minimize,maximize,close
