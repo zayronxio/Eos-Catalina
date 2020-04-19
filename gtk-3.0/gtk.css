@@ -1072,7 +1072,9 @@ dialog box.dialog-vbox box box box box combobox box  {
 margin: 1px}
 dialog box.dialog-vbox box box box box entry  {
 margin: 6px}
-
+messagedialog .dialog-vbox .dialog-action-box {background: transparent;
+border: none;
+padding: 10px}
 
 #dialog headerbar, headerbar.flat {
 background: #ebebeb;
