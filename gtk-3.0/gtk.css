@@ -157,6 +157,67 @@ color: #171717}
 border-right: solid 0.3 #000;
 }/*erradicado por afectar la apariencia de algunos botones en el centro de configuraciones**/
 
+/**etiquetas de color para files/marlin**/
+checkbutton.color-button.red {
+  background: #fd625c;
+    border-radius: 100px;
+      border: none;
+        color: #cc3e49;
+}
+
+checkbutton.color-button.blue {
+background: #58c1fa;
+color: #2f96d0;
+border-radius: 100px;
+border: none;
+}
+
+checkbutton.color-button.orange {
+background: #fea954;
+color: #e1953a;
+border-radius: 100px;
+border: none;
+}
+
+checkbutton.color-button.yellow {
+background: #ffd359;
+color: #d6b758;
+border-radius: 100px;
+border: none;
+}
+
+checkbutton.color-button.green {
+background: #88e16b;
+color: #5eca3b;
+border-radius: 100px;
+border: none;
+}
+
+checkbutton.color-button.purple {
+background: #d690e6;
+color: #b449cc;
+border-radius: 100px;
+border: none;
+}
+
+
+checkbutton.color-button.brown {
+background: #9f8864;
+color: #967541;
+border-radius: 100px;
+border: none;
+}
+
+
+
+checkbutton.color-button.slate {
+background: #6e7e8d;
+color: #526373;
+border-radius: 100px;
+border: none;
+}
+
+
 /************barra / toolbar / heanderbar ***
 ********************/
 
