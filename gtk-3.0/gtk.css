@@ -221,6 +221,7 @@ border-color: #9d9d9d;
 
 
 
+
 /*******botones cerrar/minimizar/maximizar de la barra****/
 
 
@@ -1062,9 +1063,10 @@ background: @bg_color;
 color: #202020;
 border-radius: 0px 0px 7px 7px;
 }
+dialog.background.csd {background: @bg_color;}
 dialog .dialog-vbox .dialog-action-box {background: transparent;
 border: none;}
-dialog .dialog-vbox 
+#dialog .dialog-vbox 
 {
 margin: -7}
 
