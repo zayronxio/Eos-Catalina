@@ -1174,7 +1174,7 @@ color: #202020;
 /******* botones de la barra heanderbar*****
 *******************************************/
 
-.dialog-vbox + headerbar button.image-button, window headerbar button.image-button  {
+.dialog-vbox + headerbar button.image-button, window headerbar button.image-button, .primary-toolbar button.image-button {
 background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);
 padding: 5px 6px;
 border-radius: 5px;
@@ -1863,6 +1863,22 @@ paned.vertical scrolledwindow { background: white; border-radius: 0px 0px 7px 7p
 
 /***se añade para redondear una esquina de files/marlin***/
 paned widget notebook stack widget  {background: transparent;}
+
+
+/*****gestor de archivadores***/
+.csd scrolledwindow treeview header button, .primary-toolbar {background: @bg_color;}
+.primary-toolbar button.image-button {
+background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);
+padding: 1px 1px;
+border-radius: 5px;
+border-color: #949494;
+border: solid 0.2;
+box-shadow: 0px 0.1px;
+min-height: 24px;
+min-width: 24px;
+}
+.primary-toolbar entry {
+margin:6px;}
 
 
 /* default color scheme */
