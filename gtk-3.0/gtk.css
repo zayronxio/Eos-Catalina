@@ -1084,7 +1084,7 @@ border-color: #0069FD;
 button.text-button.back-button{
 background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
 margin: 0px 0px 0px; 
-padding: 0px 11px;
+padding: 3px 11px;
 border: solid 0.2; 
 border-radius: 5px;
 box-shadow: 0px 0.1px;
