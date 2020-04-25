@@ -23,9 +23,6 @@ border-color: #aaa;
   border-radius: 5px 7px 7px 5px;
   background: #fff;
 }
-.background.csd.popup menu {background: rgba(255,255,255,0.9);
-}
-.background.csd.popup menuitem:hover label {color: white;}
 
 .background.csd.mainwindow {
 background: @bg_color;
@@ -744,6 +741,14 @@ stack grid.vertical grid stack  {background: transparent;}
 /******************************************************************************* 
 menus
 *****/
+
+
+.background.csd.popup menu {background: rgba(255,255,255,0.9);
+}
+.background.csd.popup menuitem:hover  window menu menuitem label {color: @text_color;}
+.background.csd.popup menuitem:hover label {color: white;}
+.background.csd.popup menuitem:hover  window menu menuitem:hover label {color: white;}
+
 
 menuitem.button.flat,
 modelbutton.flat, button:link, button:visited, button:link:hover, button:link:active, button:link:checked, button:visited:hover, button:visited:active, button:visited:checked, notebook > header tabs > tab button.flat:hover, notebook > header tabs > tab button.budgie-menu-launcher:hover, notebook > header tabs > tab .budgie-panel button.flat.launcher:hover, .budgie-panel notebook > header tabs > tab button.flat.launcher:hover, notebook > header tabs > tab button.flat:active, notebook > header tabs > tab button.budgie-menu-launcher:active, notebook > header tabs > tab .budgie-panel button.flat.launcher:active, .budgie-panel notebook > header tabs > tab button.flat.launcher:active, notebook > header tabs > tab button.flat:active:hover, notebook > header tabs > tab button.budgie-menu-launcher:active:hover, .app-notification button,
