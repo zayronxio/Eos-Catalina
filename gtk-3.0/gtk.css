@@ -25,6 +25,8 @@ border-color: #aaa;
 }
 .background.csd.popup menu {background: rgba(255,255,255,0.9);
 }
+.background.csd.popup menuitem:hover label {color: white;}
+
 .background.csd.mainwindow {
 background: @bg_color;
 color: #202020;
@@ -111,6 +113,7 @@ background-image: image(rgba(0,0,0,0));}
 widget.view.welcome {
 background: transparent;
 color: #353535;
+border-radius: 0 0 7px 7px;
 }/*si se cambia algunas ventanas se ven de forma incorrecta*/
 
 
@@ -218,7 +221,7 @@ border: none;
 }
 
 
-/************barra / toolbar / heanderbar ***
+/************barra / toolbar / headerbar ***
 ********************/
 
 
@@ -348,9 +351,18 @@ border: 1px solid #b5b5b5;
 color: #838383;
 border-radius: 0px 5px 5px 0px
 }
+window headerbar button.flat.image-button {
+background: #fbfbfb;
+margin-bottom: 9px;
+margin-top: 9;
+border: 1px #c1c0c4;
+min-width: 19px;
+border-radius:5px;
+border: 1px solid #b5b5b5;
+color: #838383;
+}
 
-
-/*****************botones para intercalar vista en marlin files ****/
+/*****************botones para intercalar vista en marlin files y appcenter y otras apps ****/
 
 window box button.toggle {
 background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
@@ -422,6 +434,10 @@ window  box.linked.horizontal.raised {
 margin: 6px 0px 6px;
 }
 
+window box button.toggle:checked label {
+color: #f1f1f1;
+}
+
 /***** barra de direcciones de files/marlin****/
 
 
@@ -459,9 +475,7 @@ treeview.view:selected { background: #008ff8;
 color: #fff;
 }
 
-treeview header button { background: #efefef;
-padding:5px;
-}
+
 treeview header label { color: #171717;
 }
 
@@ -469,6 +483,18 @@ treeview.view  {
 background: white;
 color: #171717;
 }
+
+/***** tab de treeview******/
+
+treeview.view header button {
+background: #f9f9f9; border: solid 0.2; box-shadow: 0px 0px; border-top: solid 0.4;
+border-radius: 0px}
+treeview.view header button:last-child {
+border-right: none;}
+treeview.view header button:first-child {
+border-left: none;}
+
+
 /**** window notebook tabs ventanas del navegador***/
 
 window paned notebook  tabs grid.horizontal revealer button {
@@ -555,6 +581,9 @@ background: #E2E2E2;
 .terminal-window tab label, .terminal-window tab image  {color: #fff;}
 .terminal-window decoration {box-shadow: 0px 1px 10px rgba(0,0,0,.5);
 }
+modelbutton:hover {background: @selected_bg_color;}
+modelbutton:hover label {color: white;}
+
 /****** menu de elementary os*****/
 
 popover,
@@ -576,6 +605,7 @@ app-launcher/entry {
 background:#000;
 }
 .menubar.background.panel stack {background: transparent;}
+.menubar.background.panel popover entry {margin: 6px;}
 
 /*********************************************
 entrys
@@ -604,7 +634,7 @@ box-shadow: 0px 0.1px 0px rgba(30, 30, 30, 1);
 entry image {
 color: #949494;
 }
-/*1001*/headerbar entry.search {margin: 15;}
+/*1001*/headerbar entry.search {margin: 4;}
 /* evita que se haga grande el headerbar a consecuecia del codigo 1001*/stack + headerbar.titlebar entry {margin: 0px;}
 
 /****se usa para nivelar en la app editor de texto de elementaryos***/
@@ -889,6 +919,11 @@ button.image-button.radio:checked {background: linear-gradient(to bottom, rgba(1
 padding: 0px 6px;
 margin: 0px; 
 color: #fff;}
+
+/*para que las barrar no se extiendan demaciado*/
+.image-button {margin: 0px;}
+
+
 /*botones de la tienda de aplicaciones*/
 row.activatable grid.horizontal.linked  {background: transparent;
 padding: 0px;
@@ -1171,7 +1206,7 @@ color: #202020;
 
 
 
-/******* botones de la barra heanderbar*****
+/******* botones de la barra headerbar*****
 *******************************************/
 
 .dialog-vbox + headerbar button.image-button, window headerbar button.image-button, .primary-toolbar button.image-button {
@@ -1181,7 +1216,7 @@ border-radius: 5px;
 border-color: #949494;
 border: solid 0.2;
 box-shadow: 0px 0.1px;
-margin: 10px -1px;
+margin: 0px -1px;
 }
 
 
@@ -1405,17 +1440,6 @@ border-left: solid 0.2 #000;
 
 headerbar.titlebar stack grid widget{
 background: transparent;
-}
-
-
-/***** tab de treeview******/
-
-treeview.view header button {
-background: transparent;
-border-radius: 0px;
-border: 0px;
-border-bottom: solid 1px #747474; 
-border-left: solid 0.3px #747474; 
 }
 
 
@@ -1866,7 +1890,7 @@ paned widget notebook stack widget  {background: transparent;}
 
 
 /*****gestor de archivadores***/
-.csd scrolledwindow treeview header button, .primary-toolbar {background: @bg_color;}
+.primary-toolbar {background: @bg_color;}
 .primary-toolbar button.image-button {
 background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);
 padding: 1px 1px;
@@ -1876,10 +1900,20 @@ border: solid 0.2;
 box-shadow: 0px 0.1px;
 min-height: 24px;
 min-width: 24px;
+margin: 0px;
 }
 .primary-toolbar entry {
 margin:6px;}
 
+/*/*/
+.dialog-vbox .dialog-action-area .text-button label {box-shadow: 0px 0px;}
+
+/**** app vocal***/
+
+.vocal-headerbar button {background: none; border: none; color: @text_color; box-shadow: 0px 0px;}
+
+/*border de las ventanas dialog-vbox **/
+.dialog-vbox scrolledwindow, .dialog-vbox viewport {border-bottom: solid 0.3,}
 
 /* default color scheme */
 @define-color bg_color #ebebeb; /**/
