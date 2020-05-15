@@ -100,10 +100,7 @@ padding-top: 1px;
 background-image: image(#999999);
 min-width: 1px;
 }
-/***** seprador de algunos recuadros en el centro de configuraciones***/
-stack paned.horizontal stack viewport grid separator.horizontal {border: none;
-background-image: image(rgba(0,0,0,0));}
-}
+
 
 /************************/
 
@@ -138,7 +135,9 @@ box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.2);
 
 
 
-/********marlin****/
+/************************
+marlin
+*************************/
 
 treeview.view.sidebar.source-list:selected {background: #008ff8;
 padding: 2px;
@@ -151,11 +150,6 @@ background: transparent;
 padding: 0px 0px 2px;
 color: #171717}
 
-/****** separador de treview en files***/
-
-#viewport.frame box  {
-border-right: solid 0.3 #000;
-}/*erradicado por afectar la apariencia de algunos botones en el centro de configuraciones**/
 
 /**etiquetas de color para files/marlin**/
 checkbutton.color-button.red {
@@ -217,6 +211,27 @@ border-radius: 100px;
 border: none;
 }
 
+/***** barra de direcciones de files/marlin****/
+
+
+.dialog-vbox +  headerbar entry.pathbar, .pathbar {
+background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
+color: #141414;
+border-color: #a9a9a9;
+border-radius: 5px;
+min-height: 24px;
+box-shadow: 0px 0.1px 0px rgba(30, 30, 30, 1);
+padding: 0px 5px;
+margin: -1px 5px; 
+border-width: 0.5px;
+border-style: solid;
+font-weight: 400;
+}
+
+.pathbar image {
+color: #929292;
+}
+
 
 /************barra / toolbar / headerbar ***
 ********************/
@@ -246,8 +261,6 @@ font-weight: 500;
  background-clip: border-box;
 } 
 
-#headerbar.titlebar {padding: 0px 15}
-#headerbar.titlebar combobox{padding: 0px 14; }
 
 /****** toolbar inferiores***/
 
@@ -356,7 +369,18 @@ border: 1px solid #b5b5b5;
 color: #838383;
 border-radius: 0px 5px 5px 0px
 }
-window headerbar button.flat.image-button {
+
+window headerbar.titlebar box + box + button + button.flat.image-button {
+background: #fbfbfb;
+margin-bottom: 9px;
+margin-top: 9;
+border: 1px #c1c0c4;
+min-width: 19px;
+border-radius:5px;
+border: 1px solid #b5b5b5;
+color: #838383;
+}
+window headerbar.titlebar box + box +  button.flat.image-button {
 background: #fbfbfb;
 margin-bottom: 9px;
 margin-top: 9;
@@ -427,14 +451,6 @@ padding: 5px;
 box-shadow: 0px 0.1px;
 }
 
-#window  box.linked.horizontal.raised {
-background-color: #fbfbfb;
-border-radius:5px;
-margin: 6px 0px 6px;
-color: #838383;
-border: 1px solid #b5b5b5;
-min-height: 20px;
-}
 window  box.linked.horizontal.raised {
 margin: 6px 0px 6px;
 }
@@ -443,26 +459,6 @@ window box button.toggle:checked label {
 color: #f1f1f1;
 }
 
-/***** barra de direcciones de files/marlin****/
-
-
-.dialog-vbox +  headerbar entry.pathbar, .pathbar {
-background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
-color: #141414;
-border-color: #a9a9a9;
-border-radius: 5px;
-min-height: 24px;
-box-shadow: 0px 0.1px 0px rgba(30, 30, 30, 1);
-padding: 0px 5px;
-margin: -1px 5px; 
-border-width: 0.5px;
-border-style: solid;
-font-weight: 400;
-}
-
-.pathbar image {
-color: #929292;
-}
 
 
 /*****treview ***/
@@ -574,6 +570,11 @@ background: #E2E2E2;
 
 }
 
+tabs {background: #dbdadc;
+margin: 0;}
+tab {margin: 0;}
+
+
 
 
 /*********************************************************************/
@@ -630,7 +631,7 @@ font-weight: 400;
 entry.combo  {
 border-radius: 5px 0px 0px 5px;
 padding: 0px 10px;
-margin: 4px -4px 4px 0px;
+margin: 0px -4px 0px 0px;
 border-radius: 5px;
 border: solid 0.2;
 box-shadow: 0px 0.1px 0px rgba(30, 30, 30, 1);
@@ -726,7 +727,13 @@ headerbar stack {background: transparent;}
 
 list.sidebar {padding: 10px;}
 list.sidebar row {padding: 5px;}
+/**** botones combo para el centro de configuraciones***/
+viewport.frame grid grid grid button.combo box {margin: -4;}
 
+/***** seprador de algunos recuadros en el centro de configuraciones***/
+stack paned.horizontal stack viewport grid separator.horizontal {border: none;
+background-image: image(rgba(0,0,0,0));}
+}
 /***** lo use para cambiar el fondo del centro de configuraciones *****
 ****************************************************************************/
 
@@ -918,7 +925,12 @@ menu > menuitem arrow:dir(rtl),
 /*color seleccion del los menus de slingshot/barra de elementaryos*/
 .menubar modelbutton:hover {background: @selected_bg_color; border-radius: 2px;}
 .menubar modelbutton:hover label {color: @selected_fg_color;}
-/*****botones****/
+/***********************************
+              [es]botones
+              [en]buttons
+************************************
+************************************
+************************************/
 
 button.image-button.radio {background: #fff; border: solid 0.2 #000;
 margin: 0px; }
@@ -932,6 +944,31 @@ button.image-button.radio:checked {background: linear-gradient(to bottom, rgba(1
 padding: 0px 6px;
 margin: 0px; 
 color: #fff;}
+
+/***botones flat*/
+/*for inkscape*/.csd.bright button.image-button.flat.toggle, .csd.bright button.flat.toggle {background: transparent; border: none; box-shadow: 0px 0px;}
+viewport frame { background: white; border-radius: 5px;}
+
+viewport frame stack grid {border: none; background: white; }
+viewport frame stack box {border: none; background: white; }
+
+
+/*** botones combo****/
+combobox button.combo, .dialog-vbox  filechooserbutton combobox button.combo {background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
+  min-height:20px;
+  min-width: 0px;
+border: solid 0.3; 
+border-radius: 5px;
+}
+entry + combobox button.combo {margin: 4px;}
+entry + combobox button.combo arrow {margin: -2px;}
+
+spinbutton + combobox button.combo box {border: none; background: transparent;}
+spinbutton + combobox button.combo {margin-top: 7px;}
+spinbutton + combobox button.combo box arrow {margin : -4px -5px -4px 0px;}
+
+
+
 
 /*para que las barrar no se extiendan demaciado*/
 .image-button {margin: 0px;}
@@ -1688,13 +1725,13 @@ combobox box button box arrow {
   border-bottom-color: rgba(0, 0, 0, 0.15);
  -gtk-icon-source: -gtk-scaled(url("image/arrow.svg"));
   min-height:22px;
-  min-width: 12px;
-  padding: 0px 4px;
-  margin: 4px 0px 3px 0px;
-  border-radius: 0 5px 5px 0;
+  min-width: 20px;
+  padding: 0px;
+  margin: -1px -1px -1px  -1px ;
   border-width: 1px;
   border-style: solid;
   border-left-style: none;
+  border-radius: 0px 5px 5px 0px;
 }
 
 #stack box box box box  combobox box button.combo {
@@ -1703,14 +1740,7 @@ border: none;
 box-shadow: 0px 0px 0px;
 }
 
-entry.combo  {
-border-radius: 5px 0px 0px 5px;
-padding: 0px 10px;
-margin: 4px -4px 4px 0px;
-border-radius: 5px;
-border: solid 0.2;
-box-shadow: 0px 0.1px 0px rgba(30, 30, 30, 1);
-}
+
 
 .titlebar combobox arrow{ 
 margin: 10px 0px;}
@@ -1721,78 +1751,19 @@ border: solid 0.2;
 border-radius: 5px;
 box-shadow: 0px 0.1px;}
 
-/*******botones combo***/
-
-
-box box box   combobox box button.combo { 
-background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
-border-radius: 5px;
-margin: 4px 0px 4px 0px;
-color: #202020;
-border-color: #000;
-border: 0.3px;
-border-style: solid;
-box-shadow: 0px 0.1px;
-padding: 0px 0px  0px;;
-} 
-
-box box box   combobox box { 
-margin: -5px 0px -4px 0px;
-padding: 0px 0px  0px;;
-} 
-
-box box box box box combobox box button.combo { 
-background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(241,241,241,1) 100%);;
-border-radius: 5px;
-margin: 0px 0px 0px 0px;
-color: #202020;
-border-color: #000;
-border: 0.3px;
-border-style: solid;
-box-shadow: 0px 0.1px;
-padding: 0px 0px ;
-} 
-
-box box box box box combobox box  { 
-margin: -5px -4px -5px -1px;
-padding: 0px 4px;
-}
-
-.inline-toolbar button.combo  box cellview,  grid grid combobox button.combo box cellview, buttonbox.horizontal.dialog-action-area combobox .combo cellview  { background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
- margin: 4px -2px 4px; 
-padding: 0px 6px;
-border: solid 0.2; 
-border-radius: 5px;
-box-shadow: 0px 0.1px;
-}  
-stack grid paned stack grid combobox box button.combo {background: transparent; border: none; box-shadow: 0px 0px;}
 
 /*doble boton*/
-.dialog-vbox button.combo{background: transparent; border: none; box-shadow: 0px 0px;} 
+#.dialog-vbox button.combo{background: transparent; border: none; box-shadow: 0px 0px;} 
 /////******
-botones de centro de confirguracion
+botones de centro de configuraciones
 ******/
-viewport combobox box button { border: solid 0.1;
-box-shadow: 0px 1px 0px rgba(0,0,0,0.1)}
-viewport combobox box {margin: -2px -3px -0px 0px;}
 
-viewport combobox box button arrow {margin: -2px -2px -5px}
-
-viewport grid grid grid button.combo  box cellview, viewport grid grid button.combo  box cellview {background:  transparent;
-padding: 0px;
-margin: 1px 0px -2px;
-box-shadow: 0px 0px 0px;
+button.combo box.horizontal { 
+margin: -4px;
+background: transparent;
 border: none;
+box-shadow: 0px 0px;
 }
-
-stack grid button.combo cellview, .background.csd.rounded box combobox cellview, .dialog-vbox combobox box cellview  {background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
-border-radius: 5px;
-min-height: 22px;
-margin: 4px -5px 4px 4px;
-border: solid 0.2 #000;}
-
-
-
 
 /****************/
 .background.csd box.vertical statusbar {
@@ -1934,6 +1905,221 @@ margin:6px;}
 
 /*border de las ventanas dialog-vbox **/
 .dialog-vbox scrolledwindow, .dialog-vbox viewport {border-bottom: solid 0.3,}
+
+
+
+/***inkscape 1.0
+*************
+************/
+.csd.bright {background: @bg_color;
+}
+
+combobox.combobright box, stack box {border: none; background: transparent;
+}
+combobox.combobright button.combo box.horizontal { 
+margin: -4px;
+background: transparent;
+border: none;
+box-shadow: 0px 0px;
+}
+
+.csd.bright stack box box { border: none}
+
+
+
+.check,
+check,
+treeview.check {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png"));
+}
+
+.osd check,
+filechooser actionbar check {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png"));
+}
+
+infobar check {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected.png"), url("assets/checkbox-unchecked-selected@2.png"));
+}
+
+.check:disabled,
+check:disabled,
+treeview.check:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"), url("assets/checkbox-unchecked-insensitive@2.png"));
+}
+
+.osd check:disabled,
+filechooser actionbar check:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png"));
+}
+
+infobar check:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-selected.png"), url("assets/checkbox-unchecked-insensitive-selected@2.png"));
+}
+
+.check:indeterminate,
+check:indeterminate,
+treeview.check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"), url("assets/checkbox-mixed@2.png"));
+}
+
+.osd check:indeterminate,
+filechooser actionbar check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png"));
+}
+
+infobar check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected.png"), url("assets/checkbox-mixed-selected@2.png"));
+}
+
+.check:indeterminate:disabled,
+check:indeterminate:disabled,
+treeview.check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"), url("assets/checkbox-mixed-insensitive@2.png"));
+}
+
+.osd check:indeterminate:disabled,
+filechooser actionbar check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png"));
+}
+
+infobar check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-selected.png"), url("assets/checkbox-mixed-insensitive-selected@2.png"));
+}
+
+.check:checked,
+check:checked,
+treeview.check:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png"));
+}
+
+.osd check:checked,
+filechooser actionbar check:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png"));
+}
+
+infobar check:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png"));
+}
+
+.check:checked:disabled,
+check:checked:disabled,
+treeview.check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"), url("assets/checkbox-checked-insensitive@2.png"));
+}
+
+.osd check:checked:disabled,
+filechooser actionbar check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png"));
+}
+
+infobar check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-selected.png"), url("assets/checkbox-checked-insensitive-selected@2.png"));
+}
+
+.radio,
+radio,
+treeview.radio {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"), url("assets/radio-unchecked@2.png"));
+}
+
+.osd radio,
+filechooser actionbar radio {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png"));
+}
+
+infobar radio {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected.png"), url("assets/radio-unchecked-selected@2.png"));
+}
+
+.radio:disabled,
+radio:disabled,
+treeview.radio:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"), url("assets/radio-unchecked-insensitive@2.png"));
+}
+
+.osd radio:disabled,
+filechooser actionbar radio:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png"));
+}
+
+infobar radio:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-selected.png"), url("assets/radio-unchecked-insensitive-selected@2.png"));
+}
+
+.radio:indeterminate,
+radio:indeterminate,
+treeview.radio:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"), url("assets/radio-mixed@2.png"));
+}
+
+.osd radio:indeterminate,
+filechooser actionbar radio:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png"));
+}
+
+infobar radio:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected.png"), url("assets/radio-mixed-selected@2.png"));
+}
+
+.radio:indeterminate:disabled,
+radio:indeterminate:disabled,
+treeview.radio:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive.png"), url("assets/radio-mixed-insensitive@2.png"));
+}
+
+.osd radio:indeterminate:disabled,
+filechooser actionbar radio:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png"));
+}
+
+infobar radio:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-selected.png"), url("assets/radio-mixed-insensitive-selected@2.png"));
+}
+
+.radio:checked,
+radio:checked,
+treeview.radio:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"), url("assets/radio-checked@2.png"));
+}
+
+.osd radio:checked,
+filechooser actionbar radio:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png"));
+}
+
+infobar radio:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png"));
+}
+
+.radio:checked:disabled,
+radio:checked:disabled,
+treeview.radio:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive.png"), url("assets/radio-checked-insensitive@2.png"));
+}
+
+.osd radio:checked:disabled,
+filechooser actionbar radio:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png"));
+}
+
+infobar radio:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected.png"), url("assets/radio-checked-insensitive-selected@2.png"));
+}
+
+.view.content-view.check:not(list) {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-selectionmode.png"), url("assets/checkbox-selectionmode@2.png"));
+  background-color: transparent;
+}
+
+.view.content-view.check:checked:not(list) {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selectionmode.png"), url("assets/checkbox-checked-selectionmode@2.png"));
+  background-color: transparent;
+}
+
+checkbutton.color-button check {
+-gtk-icon-source: none;
+}
 
 /* default color scheme */
 @define-color bg_color #ebebeb; /**/
