@@ -957,11 +957,13 @@ viewport frame stack box {border: none; background: white; }
 combobox button.combo, .dialog-vbox  filechooserbutton combobox button.combo {background: linear-gradient(180deg, #F0F0F0 1%, #FBFBFB 2%, #f1f1f1 100% );
   min-height:20px;
   min-width: 0px;
-border: solid 0.3; 
+border: solid 0.2; 
 border-radius: 5px;
 }
 entry + combobox button.combo {margin: 4px;}
 entry + combobox button.combo arrow {margin: -2px;}
+
+toolbar toolitem button.combo {margin-top: 6px;}
 
 spinbutton + combobox button.combo box {border: none; background: transparent;}
 spinbutton + combobox button.combo {margin-top: 7px;}
